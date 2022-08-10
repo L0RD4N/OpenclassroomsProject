@@ -45,11 +45,11 @@
     border: none;
     transform: scale(1);
     transition: 400ms;
-    @include shadow;
+    @include light-shadow;
 
     &:hover {
         transform: scale(1.02);
-        @include shadow-hover;
+        @include light-shadow-hover;
     }
 }
 
