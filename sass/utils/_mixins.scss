@@ -1,0 +1,15 @@
+@mixin shadow {
+    box-shadow: 5px 5px 15px lightgrey;
+}
+
+@mixin shadow-hover {
+    box-shadow: 15px 15px 5px lightgrey;
+}
+
+@mixin double-shadow {
+    box-shadow: 5px 5px 15px lightgrey, -5px -5px 15px lightgrey;
+}
+
+@mixin double-shadow-hover {
+    box-shadow: 15px 15px 5px lightgrey, -15px -15px 5px lightgrey;
+}
