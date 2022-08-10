@@ -1,0 +1,19 @@
+{
+  "name": "premierprojet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L0RD4N/OpenclassroomsProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/L0RD4N/OpenclassroomsProject/issues"
+  },
+  "homepage": "https://github.com/L0RD4N/OpenclassroomsProject#readme"
+}
