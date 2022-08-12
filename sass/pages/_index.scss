@@ -1,104 +1,108 @@
 .location {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     background-color: $darkgrey;
     padding: 20px;
     @include shadow;
 
-    span {
-        font-size: 20px;
+    .location__icon {
+        margin-right: 10px;
     }
 
-    i {
-        margin-right: 10px;
+    .location__text {
+        font-size: 20px;
     }
 }
 
-.headsection {
+.indexintro {
     background-color: $lightgrey;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    h2 {
+    .indexintro__title {
         font-size: 35px;
         text-align: center;
     }
 
-    span {
+    .indexintro__desc {
         font-size: 28px;
         margin-bottom: 50px;
         text-align: center;
     }
 
-    a {
-        color: white;
-    }
-}
+    .indexintro__button {
+        margin-bottom: 50px;
+        font-size: 20px;
+        background: linear-gradient($secondary-color, $primary-color);
+        border-radius: 30px;
+        padding: 20px;
+        border: none;
+        transform: scale(1);
+        transition: 400ms;
+        @include light-shadow;
 
-.explorebutton {
-    margin-bottom: 50px;
-    font-size: 20px;
-    background: linear-gradient($secondary-color, $primary-color);
-    border-radius: 30px;
-    padding: 20px;
-    border: none;
-    transform: scale(1);
-    transition: 400ms;
-    @include light-shadow;
+        &:hover {
+            transform: scale(1.02);
+            @include light-shadow-hover;
+        }
 
-    &:hover {
-        transform: scale(1.02);
-        @include light-shadow-hover;
+        a {
+            color: white;
+        }
     }
+
+
 }
 
 .working {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
-    h2 {
+    .working__title {
         margin: 50px 30px;
         font-size: 35px;
+        align-self: flex-start;
+        margin-left: 40px;
     }
 
-    div {
-        align-self: center;
+    .working__step {
         background-color: $lightgrey;
         margin-bottom: 40px;
         font-size: 30px;
         padding: 30px 40px;
         border-radius: 30px;
-        width: 80%;
+        width: 70%;
         @include shadow;
+
+        .working__digit {
+            background-color: $primary-color;
+            font-size: 20px;
+            border-radius: 100%;
+            padding: 5px 10px;
+            margin-left: -50px;
+            color: white;
+        }
+
+        .working__icon {
+            margin: 0px 30px;
+            color: grey;
+        }
+
+        .working__desc {
+            font-weight: 500;
+            font-size: 28px;
+        }
 
         &:hover {
             background-color: #f5edff;
 
-            i {
+            .working__icon {
                 color: $primary-color;
             }
         }
     }
 
-    mark {
-        background-color: $primary-color;
-        font-size: 20px;
-        border-radius: 100%;
-        padding: 5px 10px;
-        margin-left: -50px;
-        color: white;
-    }
-
-    i {
-        margin: 0px 30px;
-        color: grey;
-    }
-
-    span {
-        font-weight: 500;
-        font-size: 28px;
-    }
 }
 
 .restaurants {
@@ -107,76 +111,81 @@
     flex-direction: column;
     align-items: center;
 
-    h2 {
+    .restaurants__title {
         font-size: 35px;
-        padding-top: 50px;
+        margin-top: 80px;
         margin-left: 30px;
-    }
-}
-
-.restaurantcard {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin-bottom: 50px;
-    background-color: white;
-    border-radius: 20px;
-    transform: scale(1);
-    transition: 400ms;
-    @include shadow;
-
-    &:hover {
-        transform: scale(1.02);
-        @include shadow-hover;
+        align-self: flex-start;
     }
 
-    img {
-        height: 300px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-    }
-}
+    .restaurantcard {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 50px;
+        background-color: white;
+        border-radius: 20px;
+        transform: scale(1);
+        transition: 400ms;
+        @include shadow;
 
-.rcdesc {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .rctxt {
-        margin: 0 0 20px 20px;
-        font-size: 20px;
-
-        h3 {
-            margin-bottom: 0;
-        }
-    }
-
-    .rclike {
-        position: relative;
-        margin-right: 10px;
-
-        .fa-regular {
-            font-size: 50px;
+        &:hover {
+            transform: scale(1.02);
+            @include shadow-hover;
         }
 
-        .fa-solid {
-            font-size: 50px;
-            position: absolute;
-            right: 0;
-            top: 0;
-            opacity: 0;
-            transition: 300ms;
+        .restaurantcard__image img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
         }
 
-        &:hover .fa-solid {
-            opacity: 1;
+        .restaurantcard__desc {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-            &::before {
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
-                background-image: linear-gradient(#9356DC, #FF79DA);
+            .restaurantcard__text {
+                margin: 0 0 20px 20px;
+                font-size: 20px;
+
+                .restaurantcard__title {
+                    margin-bottom: 0;
+                }
+
+                .restaurantcard__location {
+                    font-size: 20px;
+                }
+            }
+
+            .restaurantcard__like {
+                position: relative;
+                margin-right: 10px;
+
+                .restaurantcard__heart {
+                    font-size: 50px;
+                }
+
+                .restaurantcard__heart--full {
+                    font-size: 50px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    opacity: 0;
+                    transition: 300ms;
+                }
+
+                &:hover .restaurantcard__heart--full {
+                    opacity: 1;
+
+                    &::before {
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                        background-image: linear-gradient(#9356DC, #FF79DA);
+                    }
+                }
             }
         }
     }

@@ -1,9 +1,20 @@
 header {
     display: flex;
     justify-content: center;
-}
 
-#logo {
-    height: 50px;
-    margin: 20px;
+    .header__arrow {
+        font-size: 25px;
+        align-self: center;
+        position: absolute;
+        left: 0;
+        margin-left: 30px;
+        width: 5px;
+    }
+
+    .header__logo {
+        font-family: $secondary-font;
+        font-size: 40px;
+        letter-spacing: 1px;
+        margin: 10px auto;
+    }
 }

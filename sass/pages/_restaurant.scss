@@ -1,114 +1,108 @@
-header {
-    .backarrow {
-        font-size: 40px;
-        align-self: center;
-        position: absolute;
-        left: 0;
-        padding-left: 5px;
-        width: 5px;
-    }
-}
-
-.cover img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.menu {
-    border-radius: 50px 50px 0 0;
-}
-
-.restaurantname {
-    font-family: $secondary-font;
-    font-size: 30px;
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    letter-spacing: 1px;
-}
-
-.like {
-    position: relative;
-    align-self: center;
-
-    .fa-regular {
-        font-size: 50px;
+.restaurantintro {
+    .restaurantintro__image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
     }
 
-    .fa-solid {
-        font-size: 50px;
-        opacity: 0;
-        position: absolute;
-        right: 0;
-        transition: 300ms;
+    .restaurantintro__desc {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 50px 50px 0 0;
+        border: 1px solid;
 
-        &:hover {
-            opacity: 1;
+        .restaurantintro__title {
+            font-size: 35px;
+            letter-spacing: 1px;
+            font-family: $secondary-font;
+        }
 
-            &::before {
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
-                background-image: linear-gradient(#9356DC, #FF79DA);
+        .restaurantintro__like {
+            position: relative;
+            align-self: center;
+
+            .restaurantintro__heart {
+                font-size: 35px;
+            }
+
+            .restaurantintro__heart--full {
+                font-size: 35px;
+                opacity: 0;
+                position: absolute;
+                right: 0;
+                transition: 300ms;
+
+                &:hover {
+                    opacity: 1;
+
+                    &::before {
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                        background-image: linear-gradient(#9356DC, #FF79DA);
+                    }
+                }
             }
         }
     }
+
+
 }
 
-.submenu {
+.menu {
     margin: 20px;
-}
 
-.submenu h3 {
-    font-weight: 300;
-}
+    .menu__title {
+        font-weight: 300;
+        margin-top: 50px;
 
-.submenu h3::after {
-    border-bottom: 4px solid #99E2D0;
-    display: block;
-    content: "";
-    max-width: 45px;
-    padding: 5px 0px;
-}
+        &:after {
+            border-bottom: 4px solid #99E2D0;
+            display: block;
+            content: "";
+            max-width: 45px;
+            padding: 5px 0px;
+        }
+    }
 
-.dish {
-    border-radius: 20px;
-    padding-bottom: 10px;
-    @include double-shadow;
-    animation: progressivemenu 2s linear;
-}
+    .menu__dish {
+        border-radius: 20px;
+        padding-bottom: 10px;
+        @include double-shadow;
+        animation: progressivemenu 2s linear;
 
-.dish h4 {
-    font-size: 25px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-}
+        .dish__title {
+            font-size: 25px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+        }
 
-.dish span {
-    font-size: 20px;
-    font-weight: 300;
-    margin-left: 10px;
-}
+        .dish__desc {
+            font-size: 20px;
+            font-weight: 300;
+            margin-left: 10px;
+        }
 
-.dish mark {
-    background-color: transparent;
-    font-weight: 700;
-
+        .dish__price {
+            background-color: transparent;
+            font-weight: 700;
+        }
+    }
 }
 
 .order {
     display: flex;
     justify-content: center;
-}
+    margin: 50px auto;
 
-.orderbutton {
-    margin-bottom: 50px;
-    font-size: 20px;
-    background: linear-gradient($secondary-color, $primary-color);
-    border-radius: 30px;
-    padding: 20px;
-    border: none;
-    color: white
+    .order__button {
+        font-size: 20px;
+        background: linear-gradient($secondary-color, $primary-color);
+        border-radius: 30px;
+        padding: 20px;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
 }

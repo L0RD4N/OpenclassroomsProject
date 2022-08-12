@@ -5,22 +5,28 @@
     <meta charset="utf-8" />
     <title>La palette du goût, ohmyfood</title>
     <script src="https://kit.fontawesome.com/6af46a1791.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/stylesrestaurant.css">
+    <link rel="stylesheet" href="public/css/style.css">
 </head>
 
 <body>
+    <div class="pageloader">
+        <span class="pageloader__spinner"></span>
+        <span class="pageloader__text">ohmyfood</span>
+    </div>
     <header>
-        <div class="backarrow"><a href="index.html"><i class="fa-solid fa-arrow-left"></i></a></div>
-        <img id="logo" src="images/logo/ohmyfood.png" alt="logo ohmyfood" />
-        <div class="invisible"></div>
+        <div class="header__arrow"><a href="index.html"><i class="fa-solid fa-arrow-left"></i></a></div>
+        <h1 class="header__logo">ohmyfood</h1>
     </header>
     <main>
-        <div class="cover">
+        <div class="restaurantheadsection">
             <img src="images/restaurants/palette.jpg" alt="restaurant la Palette du goût">
-        </div>
-        <div class="restaurantname">
-            <h2>La palette du goût</h2>
-            <div class="like"><i class="fa-regular fa-heart"></i></div>
+            <div class="restaurantname">
+                <h2>La palette du goût</h2>
+                <div class="like">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
         </div>
         <div class="submenu">
             <h3>ENTRÉES</h3>
@@ -81,12 +87,15 @@
         </div>
     </main>
     <footer>
-        <div class="footerlogo">ohmyfood</div>
-        <ul>
-            <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="mailto:x@mail.com">Contact</a></li>
+        <div class="footer__logo">ohmyfood</div>
+        <ul class="footer__linkslist">
+            <li class="footer__link"><a href="#"><i class="footer__ustensilsicon fa-solid fa-utensils"></i>Proposer un
+                    restaurant</a></li>
+            <li class="footer__link"><a href="#"><i
+                        class="footer__handshakeicon fa-solid fa-handshake-angle"></i>Devenir
+                    partenaire</a></li>
+            <li class="footer__link"><a href="#">Mentions légales</a></li>
+            <li class="footer__link"><a href="mailto:x@mail.com">Contact </a></li>
         </ul>
     </footer>
 </body>
