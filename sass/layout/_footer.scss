@@ -9,21 +9,21 @@ footer {
         color: white;
     }
 
-    .footer__linkslist {
+    ul {
         color: white;
         list-style-type: none;
         font-size: 23px;
         padding-bottom: 30px;
         margin-bottom: 0;
 
-        .footer__link {
+        li {
             margin-bottom: 10px;
 
-            .footer__ustensilsicon {
+            .fa-utensils {
                 margin-right: 20px;
             }
 
-            .footer__handshakeicon {
+            .fa-handshake-angle {
                 margin-right: 11px;
             }
         }
