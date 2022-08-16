@@ -174,6 +174,27 @@ a {
 .working .working__step:hover i {
   color: #9356DC;
 }
+@media screen and (min-width: 992px) {
+  .working {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .working h2 {
+    width: 100%;
+  }
+  .working .working__step {
+    width: 24%;
+    max-width: 350px;
+    margin-right: 30px;
+    padding: 15px 20px;
+  }
+  .working .working__step mark {
+    margin-left: -30px;
+  }
+  .working .working__step span {
+    font-size: 20px;
+  }
+}
 
 .restaurantslist {
   background-color: #F6F6F6;
@@ -236,10 +257,12 @@ a {
   right: 0;
   top: 0;
   opacity: 0;
-  transition: 300ms;
+  transition: 500ms;
+  scale: 1;
 }
 .restaurantslist .restaurantcard .restaurantcard__desc .restaurantcard__like .fa-solid:hover {
   opacity: 1;
+  scale: 1.05;
 }
 .restaurantslist .restaurantcard .restaurantcard__desc .restaurantcard__like .fa-solid:hover:before {
   -webkit-background-clip: text;
@@ -247,17 +270,37 @@ a {
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
 }
+@media screen and (min-width: 992px) {
+  .restaurantslist .restaurantcard {
+    width: 45%;
+    max-width: 650px;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurantslist {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .restaurantslist h2 {
+    width: 100%;
+  }
+}
 
 .restaurantintro img {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  z-index: -1;
+  position: relative;
 }
 .restaurantintro .restaurantintro__desc {
   display: flex;
   justify-content: space-between;
   border-radius: 50px 50px 0 0;
-  border: 1px solid;
+  background: white;
+  margin-top: -50px;
+  padding: 20px 30px;
 }
 .restaurantintro .restaurantintro__desc h2 {
   font-size: 35px;
@@ -270,16 +313,20 @@ a {
 }
 .restaurantintro .restaurantintro__desc .restaurantintro__like .fa-regular {
   font-size: 35px;
+  margin-right: 10px;
 }
 .restaurantintro .restaurantintro__desc .restaurantintro__like .fa-solid {
   font-size: 35px;
-  opacity: 0;
   position: absolute;
   right: 0;
-  transition: 300ms;
+  margin-right: 10px;
+  opacity: 0;
+  scale: 1;
+  transition: 500ms;
 }
 .restaurantintro .restaurantintro__desc .restaurantintro__like .fa-solid:hover {
   opacity: 1;
+  scale: 1.05;
   cursor: pointer;
 }
 .restaurantintro .restaurantintro__desc .restaurantintro__like .fa-solid:hover:before {
@@ -289,40 +336,65 @@ a {
   background-image: linear-gradient(#9356DC, #FF79DA);
 }
 
-.menu {
-  margin: 20px;
+.menucontainer .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.menu h3 {
+.menucontainer .menu h3 {
   font-weight: 300;
   margin-top: 50px;
+  margin-left: 20px;
+  align-self: flex-start;
 }
-.menu h3:after {
+.menucontainer .menu h3:after {
   border-bottom: 4px solid #99E2D0;
   display: block;
   content: "";
   max-width: 45px;
   padding: 5px 0px;
 }
-.menu .menu__dish {
+.menucontainer .menu .menu__dish {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 20px;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
+  width: 95%;
   box-shadow: 5px 5px 15px lightgrey, -5px -5px 15px lightgrey;
   animation: progressivemenu 2s linear;
 }
-.menu .menu__dish h4 {
-  font-size: 25px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  padding-top: 10px;
+.menucontainer .menu .menu__dish .dish__desc {
+  padding: 15px 0px 15px 10px;
 }
-.menu .menu__dish span {
+.menucontainer .menu .menu__dish .dish__desc h4 {
+  font-size: 25px;
+  margin: 0px;
+}
+.menucontainer .menu .menu__dish .dish__desc span {
   font-size: 20px;
   font-weight: 300;
-  margin-left: 10px;
 }
-.menu .menu__dish mark {
-  background-color: transparent;
+.menucontainer .menu .menu__dish .dish__price {
   font-weight: 700;
+  align-self: flex-end;
+  padding-bottom: 15px;
+}
+.menucontainer .menu .menu__dish .dish__confirmation {
+  border: 1px solid;
+  border-radius: 50px;
+  align-self: stretch;
+}
+.menucontainer .menu .menu__dish .dish__confirmation i {
+  font-size: 20px;
+  color: #99E2D0;
+}
+@media screen and (min-width: 992px) {
+  .menucontainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .order {
@@ -334,7 +406,7 @@ a {
   font-size: 20px;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
-  padding: 20px;
+  padding: 20px 60px;
   border: none;
   color: white;
   cursor: pointer;
