@@ -356,7 +356,6 @@ a {
 }
 .menucontainer .menu .menu__dish {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   border-radius: 20px;
   margin-bottom: 20px;
@@ -379,15 +378,34 @@ a {
   font-weight: 700;
   align-self: flex-end;
   padding-bottom: 15px;
+  margin-right: 20px;
 }
 .menucontainer .menu .menu__dish .dish__confirmation {
-  border: 1px solid;
-  border-radius: 50px;
   align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+  width: 80px;
+  background-color: #99E2D0;
+  cursor: pointer;
 }
-.menucontainer .menu .menu__dish .dish__confirmation i {
-  font-size: 20px;
+.menucontainer .menu .menu__dish .dish__confirmation .dish__checkmark {
+  border-radius: 50px;
+  background-color: white;
+}
+.menucontainer .menu .menu__dish .dish__confirmation .dish__checkmark i {
+  padding: 4px;
+  font-size: 17px;
   color: #99E2D0;
+  transition: 400ms;
+  transform: rotateZ(0deg);
+}
+.menucontainer .menu .menu__dish:hover .dish__confirmation {
+  display: flex;
+}
+.menucontainer .menu .menu__dish:hover .dish__confirmation i {
+  transform: rotateZ(360deg);
 }
 @media screen and (min-width: 992px) {
   .menucontainer {

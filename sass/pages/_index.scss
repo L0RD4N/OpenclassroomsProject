@@ -39,11 +39,11 @@
         border: none;
         transform: scale(1);
         transition: 400ms;
-        @include light-shadow;
+        @include shadow--light;
 
         &:hover {
             transform: scale(1.02);
-            @include light-shadow-hover;
+            @include shadow--light--hover;
         }
 
         a {
@@ -157,7 +157,7 @@
 
         &:hover {
             transform: scale(1.02);
-            @include shadow-hover;
+            @include shadow--hover;
         }
 
         img {
