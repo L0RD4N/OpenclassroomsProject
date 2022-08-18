@@ -1,23 +1,23 @@
-@mixin shadow {
+@mixin boxshadow {
     box-shadow: 5px 5px 15px lightgrey;
 }
 
-@mixin shadow--hover {
+@mixin boxshadow--hover {
     box-shadow: 15px 15px 5px lightgrey;
 }
 
-@mixin shadow--light {
+@mixin boxshadow--light {
     box-shadow: 5px 5px 10px lightgrey;
 }
 
-@mixin shadow--light--hover {
+@mixin boxshadow--light--hover {
     box-shadow: 10px 10px 5px lightgrey;
 }
 
-@mixin shadow--double {
+@mixin boxshadow--double {
     box-shadow: 5px 5px 15px lightgrey, -5px -5px 15px lightgrey;
 }
 
-@mixin shadow--double--hover {
+@mixin boxshadow--double--hover {
     box-shadow: 15px 15px 5px lightgrey, -15px -15px 5px lightgrey;
 }

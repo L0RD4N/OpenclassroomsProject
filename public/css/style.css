@@ -89,7 +89,6 @@ a {
   text-align: center;
   background-color: #EAEAEA;
   padding: 20px;
-  box-shadow: 5px 5px 15px lightgrey;
 }
 .location i {
   margin-right: 10px;
@@ -181,6 +180,7 @@ a {
   }
   .working h2 {
     width: 100%;
+    text-align: center;
   }
   .working .working__step {
     width: 24%;
@@ -228,6 +228,14 @@ a {
   width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
+}
+.restaurantslist .restaurantcard .restaurantcard__tagnew {
+  background-color: #99E2D0;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 7px;
+  border-radius: 3px;
 }
 .restaurantslist .restaurantcard .restaurantcard__desc {
   display: flex;
@@ -284,6 +292,7 @@ a {
   }
   .restaurantslist h2 {
     width: 100%;
+    text-align: center;
   }
 }
 
@@ -360,6 +369,7 @@ a {
   border-radius: 20px;
   margin-bottom: 20px;
   width: 95%;
+  height: 90px;
   box-shadow: 5px 5px 15px lightgrey, -5px -5px 15px lightgrey;
   animation: progressivemenu 2s linear;
 }
@@ -371,13 +381,13 @@ a {
   margin: 0px;
 }
 .menucontainer .menu .menu__dish .dish__desc span {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 300;
 }
 .menucontainer .menu .menu__dish .dish__price {
   font-weight: 700;
   align-self: flex-end;
-  padding-bottom: 15px;
+  margin-bottom: 19px;
   margin-right: 20px;
 }
 .menucontainer .menu .menu__dish .dish__confirmation {
@@ -428,11 +438,20 @@ a {
   border: none;
   color: white;
   cursor: pointer;
+  transform: scale(1);
+  transition: 400ms;
+  box-shadow: 5px 5px 10px lightgrey;
+}
+.order .order__button:hover {
+  box-shadow: 10px 10px 5px lightgrey;
+  transform: scale(1.02);
 }
 
 header {
   display: flex;
   justify-content: center;
+  position: relative;
+  box-shadow: 5px 5px 15px lightgrey;
 }
 header .header__arrow {
   font-size: 25px;

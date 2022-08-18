@@ -1,6 +1,8 @@
 header {
     display: flex;
     justify-content: center;
+    position: relative;
+    @include boxshadow;
 
     .header__arrow {
         font-size: 25px;

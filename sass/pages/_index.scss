@@ -2,7 +2,6 @@
     text-align: center;
     background-color: $darkgrey;
     padding: 20px;
-    @include shadow;
 
     i {
         margin-right: 10px;
@@ -39,11 +38,11 @@
         border: none;
         transform: scale(1);
         transition: 400ms;
-        @include shadow--light;
+        @include boxshadow--light;
 
         &:hover {
             transform: scale(1.02);
-            @include shadow--light--hover;
+            @include boxshadow--light--hover;
         }
 
         a {
@@ -73,8 +72,7 @@
         padding: 30px 40px;
         border-radius: 30px;
         width: 70%;
-
-        @include shadow;
+        @include boxshadow;
 
         mark {
             background-color: $primary-color;
@@ -110,6 +108,7 @@
 
         h2 {
             width: 100%;
+            text-align: center;
         }
 
         .working__step {
@@ -153,11 +152,11 @@
         border-radius: 20px;
         transform: scale(1);
         transition: 400ms;
-        @include shadow;
+        @include boxshadow;
 
         &:hover {
             transform: scale(1.02);
-            @include shadow--hover;
+            @include boxshadow--hover;
         }
 
         img {
@@ -165,6 +164,15 @@
             width: 100%;
             object-fit: cover;
             border-radius: 20px 20px 0 0;
+        }
+
+        .restaurantcard__tagnew {
+            background-color: $tertiary-color;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            padding: 7px;
+            border-radius: 3px;
         }
 
         .restaurantcard__desc {
@@ -231,6 +239,7 @@
 
         h2 {
             width: 100%;
+            text-align: center;
         }
     }
 }
