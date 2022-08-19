@@ -85,6 +85,20 @@ a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 1440px;
+    margin: auto;
+  }
+  .flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flexnowrap {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
 .location {
   text-align: center;
   background-color: #EAEAEA;
@@ -176,11 +190,9 @@ a {
 @media screen and (min-width: 992px) {
   .working {
     flex-flow: row wrap;
-    justify-content: center;
   }
   .working h2 {
     width: 100%;
-    text-align: center;
   }
   .working .working__step {
     width: 24%;
@@ -288,11 +300,9 @@ a {
 @media screen and (min-width: 992px) {
   .restaurantslist {
     flex-flow: row wrap;
-    justify-content: center;
   }
   .restaurantslist h2 {
     width: 100%;
-    text-align: center;
   }
 }
 
@@ -345,25 +355,25 @@ a {
   background-image: linear-gradient(#9356DC, #FF79DA);
 }
 
-.menucontainer .menu {
+.menu {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.menucontainer .menu h3 {
+.menu h3 {
   font-weight: 300;
   margin-top: 50px;
   margin-left: 20px;
   align-self: flex-start;
 }
-.menucontainer .menu h3:after {
+.menu h3:after {
   border-bottom: 4px solid #99E2D0;
   display: block;
   content: "";
   max-width: 45px;
   padding: 5px 0px;
 }
-.menucontainer .menu .menu__dish {
+.menu .menu__dish {
   display: flex;
   align-items: center;
   border-radius: 20px;
@@ -373,56 +383,56 @@ a {
   box-shadow: 5px 5px 15px lightgrey, -5px -5px 15px lightgrey;
   animation: progressivemenu 2s linear;
 }
-.menucontainer .menu .menu__dish .dish__desc {
+.menu .menu__dish .dish__text {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu .menu__dish .dish__text .dish__desc {
   padding: 15px 0px 15px 10px;
 }
-.menucontainer .menu .menu__dish .dish__desc h4 {
+.menu .menu__dish .dish__text .dish__desc h4 {
   font-size: 25px;
   margin: 0px;
 }
-.menucontainer .menu .menu__dish .dish__desc span {
+.menu .menu__dish .dish__text .dish__desc span {
   font-size: 19px;
   font-weight: 300;
 }
-.menucontainer .menu .menu__dish .dish__price {
+.menu .menu__dish .dish__text .dish__price {
   font-weight: 700;
   align-self: flex-end;
   margin-bottom: 19px;
   margin-right: 20px;
 }
-.menucontainer .menu .menu__dish .dish__confirmation {
-  align-self: stretch;
+.menu .menu__dish .dish__confirmation {
   display: flex;
+  align-self: stretch;
   justify-content: center;
+  margin-right: -150px;
   align-items: center;
   border-radius: 0 20px 20px 0;
   width: 80px;
   background-color: #99E2D0;
   cursor: pointer;
 }
-.menucontainer .menu .menu__dish .dish__confirmation .dish__checkmark {
+.menu .menu__dish .dish__confirmation .dish__checkmark {
   border-radius: 50px;
   background-color: white;
 }
-.menucontainer .menu .menu__dish .dish__confirmation .dish__checkmark i {
+.menu .menu__dish .dish__confirmation .dish__checkmark i {
   padding: 4px;
   font-size: 17px;
   color: #99E2D0;
   transition: 400ms;
   transform: rotateZ(0deg);
 }
-.menucontainer .menu .menu__dish:hover .dish__confirmation {
+.menu .menu__dish:hover .dish__confirmation {
   display: flex;
 }
-.menucontainer .menu .menu__dish:hover .dish__confirmation i {
+.menu .menu__dish:hover .dish__confirmation i {
   transform: rotateZ(360deg);
-}
-@media screen and (min-width: 992px) {
-  .menucontainer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
 }
 
 .order {
