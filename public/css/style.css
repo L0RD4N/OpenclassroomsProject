@@ -85,20 +85,6 @@ a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 992px) {
-  .container {
-    max-width: 1440px;
-    margin: auto;
-  }
-  .flexwrap {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .flexnowrap {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-}
 .location {
   text-align: center;
   background-color: #EAEAEA;
@@ -187,26 +173,6 @@ a {
 .working .working__step:hover i {
   color: #9356DC;
 }
-@media screen and (min-width: 992px) {
-  .working {
-    flex-flow: row wrap;
-  }
-  .working h2 {
-    width: 100%;
-  }
-  .working .working__step {
-    width: 24%;
-    max-width: 350px;
-    margin-right: 30px;
-    padding: 15px 20px;
-  }
-  .working .working__step mark {
-    margin-left: -30px;
-  }
-  .working .working__step span {
-    font-size: 20px;
-  }
-}
 
 .restaurantslist {
   background-color: #F6F6F6;
@@ -290,21 +256,6 @@ a {
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
 }
-@media screen and (min-width: 992px) {
-  .restaurantslist .restaurantcard {
-    width: 45%;
-    max-width: 650px;
-    margin: 20px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .restaurantslist {
-    flex-flow: row wrap;
-  }
-  .restaurantslist h2 {
-    width: 100%;
-  }
-}
 
 .restaurantintro img {
   width: 100%;
@@ -375,11 +326,13 @@ a {
 }
 .menu .menu__dish {
   display: flex;
+  overflow: hidden;
   align-items: center;
   border-radius: 20px;
   margin-bottom: 20px;
   width: 95%;
   height: 90px;
+  cursor: pointer;
   box-shadow: 5px 5px 15px lightgrey, -5px -5px 15px lightgrey;
   animation: progressivemenu 2s linear;
 }
@@ -388,17 +341,29 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu .menu__dish .dish__text .dish__desc {
   padding: 15px 0px 15px 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu .menu__dish .dish__text .dish__desc h4 {
   font-size: 25px;
   margin: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu .menu__dish .dish__text .dish__desc span {
   font-size: 19px;
   font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu .menu__dish .dish__text .dish__price {
   font-weight: 700;
@@ -411,11 +376,11 @@ a {
   align-self: stretch;
   justify-content: center;
   margin-right: -150px;
+  transition: 500ms;
   align-items: center;
   border-radius: 0 20px 20px 0;
   width: 80px;
   background-color: #99E2D0;
-  cursor: pointer;
 }
 .menu .menu__dish .dish__confirmation .dish__checkmark {
   border-radius: 50px;
@@ -425,11 +390,12 @@ a {
   padding: 4px;
   font-size: 17px;
   color: #99E2D0;
-  transition: 400ms;
+  transition: 500ms;
   transform: rotateZ(0deg);
 }
 .menu .menu__dish:hover .dish__confirmation {
   display: flex;
+  margin-right: 0;
 }
 .menu .menu__dish:hover .dish__confirmation i {
   transform: rotateZ(360deg);
@@ -507,5 +473,71 @@ footer ul li .fa-handshake-angle {
 footer ul a {
   color: white;
 }
+
+/* @media screen and (min-width: 992px) {
+    .working {
+        flex-flow: row wrap;
+
+        h2 {
+            width: 100%;
+        }
+
+        .working__step {
+            width: 24%;
+            max-width: 350px;
+            margin-right: 30px;
+            padding: 15px 20px;
+
+            mark {
+                margin-left: -30px;
+            }
+
+            span {
+                font-size: 20px;
+            }
+
+        }
+
+    }
+
+    .restaurantslist {
+        flex-flow: row wrap;
+
+        h2 {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 992px) {
+            flex-flow: row wrap;
+
+            h2 {
+                width: 100%;
+            }
+        }
+    }
+}
+
+h2 {
+    width: 45%;
+    max-width: 650px;
+    margin: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    .flexwrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flexnowrap {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+} */
 
 /*# sourceMappingURL=style.css.map */
