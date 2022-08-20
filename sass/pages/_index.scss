@@ -29,7 +29,7 @@
         text-align: center;
     }
 
-    &__button {
+    .indexintro__button {
         margin-bottom: 50px;
         font-size: 20px;
         background: linear-gradient($secondary-color, $primary-color);
@@ -49,8 +49,6 @@
             color: white;
         }
     }
-
-
 }
 
 .working {
@@ -68,11 +66,19 @@
     .working__step {
         background-color: $lightgrey;
         margin-bottom: 40px;
-        font-size: 30px;
+        font-size: 23px;
         padding: 30px 40px;
         border-radius: 30px;
         width: 70%;
         @include boxshadow;
+
+        &:hover {
+            background-color: #f5edff;
+
+            i {
+                color: $primary-color;
+            }
+        }
 
         mark {
             background-color: $primary-color;
@@ -90,20 +96,11 @@
 
         span {
             font-weight: 500;
-            font-size: 28px;
-        }
-
-        &:hover {
-            background-color: #f5edff;
-
-            i {
-                color: $primary-color;
-            }
         }
     }
 }
 
-.restaurantslist {
+#restaurants {
     background-color: $lightgrey;
     display: flex;
     flex-direction: column;
@@ -120,6 +117,7 @@
         display: flex;
         flex-direction: column;
         width: 90%;
+        max-width: 600px;
         margin-bottom: 50px;
         background-color: white;
         border-radius: 20px;
