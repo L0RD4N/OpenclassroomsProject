@@ -86,7 +86,7 @@ a {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -180,21 +180,25 @@ a {
 
 #restaurants {
   background-color: #F6F6F6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-#restaurants h2 {
+#restaurants .restaurantscontainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+#restaurants .restaurantscontainer h2 {
   font-size: 35px;
   margin-top: 80px;
   margin-left: 30px;
   align-self: flex-start;
+  width: 100%;
 }
-#restaurants .restaurantcard {
+#restaurants .restaurantscontainer .restaurantcard {
   display: flex;
   flex-direction: column;
   width: 90%;
-  max-width: 600px;
+  max-width: 500px;
   margin-bottom: 50px;
   background-color: white;
   border-radius: 20px;
@@ -202,17 +206,17 @@ a {
   transition: 400ms;
   box-shadow: 5px 5px 15px lightgrey;
 }
-#restaurants .restaurantcard:hover {
+#restaurants .restaurantscontainer .restaurantcard:hover {
   transform: scale(1.02);
   box-shadow: 15px 15px 5px lightgrey;
 }
-#restaurants .restaurantcard img {
+#restaurants .restaurantscontainer .restaurantcard img {
   height: 300px;
   width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-#restaurants .restaurantcard .restaurantcard__tagnew {
+#restaurants .restaurantscontainer .restaurantcard .restaurantcard__tagnew {
   background-color: #99E2D0;
   position: absolute;
   right: 20px;
@@ -220,29 +224,29 @@ a {
   padding: 7px;
   border-radius: 3px;
 }
-#restaurants .restaurantcard .restaurantcard__desc {
+#restaurants .restaurantscontainer .restaurantcard .restaurantcard__desc {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#restaurants .restaurantcard .restaurantcard__desc .restaurantcard__text {
+#restaurants .restaurantscontainer .restaurantcard .restaurantcard__desc .restaurantcard__text {
   margin: 0 0 20px 20px;
   font-size: 20px;
 }
-#restaurants .restaurantcard .restaurantcard__desc .restaurantcard__text h3 {
+#restaurants .restaurantscontainer .restaurantcard .restaurantcard__desc .restaurantcard__text h3 {
   margin-bottom: 0;
 }
-#restaurants .restaurantcard .restaurantcard__desc .restaurantcard__text span {
+#restaurants .restaurantscontainer .restaurantcard .restaurantcard__desc .restaurantcard__text span {
   font-size: 20px;
 }
-#restaurants .restaurantcard .restaurantcard__desc .restaurantcard__like {
+#restaurants .restaurantscontainer .restaurantcard .restaurantcard__desc .restaurantcard__like {
   position: relative;
   margin-right: 10px;
 }
-#restaurants .restaurantcard .restaurantcard__desc .restaurantcard__like .fa-regular {
+#restaurants .restaurantscontainer .restaurantcard .restaurantcard__desc .restaurantcard__like .fa-regular {
   font-size: 50px;
 }
-#restaurants .restaurantcard .restaurantcard__desc .restaurantcard__like .fa-solid {
+#restaurants .restaurantscontainer .restaurantcard .restaurantcard__desc .restaurantcard__like .fa-solid {
   font-size: 50px;
   position: absolute;
   right: 0;
@@ -251,11 +255,11 @@ a {
   transition: 500ms;
   scale: 1;
 }
-#restaurants .restaurantcard .restaurantcard__desc .restaurantcard__like .fa-solid:hover {
+#restaurants .restaurantscontainer .restaurantcard .restaurantcard__desc .restaurantcard__like .fa-solid:hover {
   opacity: 1;
   scale: 1.05;
 }
-#restaurants .restaurantcard .restaurantcard__desc .restaurantcard__like .fa-solid:hover:before {
+#restaurants .restaurantscontainer .restaurantcard .restaurantcard__desc .restaurantcard__like .fa-solid:hover:before {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -544,7 +548,7 @@ h2 {
         flex-wrap: nowrap;
     }
 } */
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .working {
     flex-flow: row wrap;
     justify-content: space-around;
