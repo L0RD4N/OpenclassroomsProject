@@ -198,7 +198,6 @@ a {
   display: flex;
   flex-direction: column;
   width: 90%;
-  max-width: 500px;
   margin-bottom: 50px;
   background-color: white;
   border-radius: 20px;
@@ -566,6 +565,9 @@ h2 {
   }
   #restaurants h2 {
     width: 100%;
+  }
+  #restaurants .restaurantcard {
+    max-width: 500px;
   }
   .menucontainer {
     display: flex;
