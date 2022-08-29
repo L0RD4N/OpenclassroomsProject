@@ -252,11 +252,9 @@ a {
   top: 0;
   opacity: 0;
   transition: 500ms;
-  scale: 1;
 }
 #restaurants .restaurantscontainer .restaurantcard .restaurantcard__desc .restaurantcard__like .fa-solid:hover {
   opacity: 1;
-  scale: 1.05;
 }
 #restaurants .restaurantscontainer .restaurantcard .restaurantcard__desc .restaurantcard__like .fa-solid:hover:before {
   -webkit-background-clip: text;
@@ -299,12 +297,10 @@ a {
   right: 0;
   margin-right: 10px;
   opacity: 0;
-  scale: 1;
   transition: 500ms;
 }
 .restaurantintro .restaurantintro__desc .restaurantintro__like .fa-solid:hover {
   opacity: 1;
-  scale: 1.05;
   cursor: pointer;
 }
 .restaurantintro .restaurantintro__desc .restaurantintro__like .fa-solid:hover:before {

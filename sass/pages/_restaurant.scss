@@ -36,12 +36,10 @@
                 right: 0;
                 margin-right: 10px;
                 opacity: 0;
-                scale: 1;
                 transition: 500ms;
 
                 &:hover {
                     opacity: 1;
-                    scale: 1.05;
                     cursor: pointer;
 
                     &:before {
