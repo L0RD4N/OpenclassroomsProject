@@ -342,7 +342,6 @@ a {
   height: 90px;
   cursor: pointer;
   box-shadow: 5px 5px 15px lightgrey, -5px -5px 15px lightgrey;
-  animation: progressivemenu 2s linear;
 }
 .menu .menu__dish .dish__text {
   width: 100%;
@@ -360,14 +359,14 @@ a {
   text-overflow: ellipsis;
 }
 .menu .menu__dish .dish__text .dish__desc h4 {
-  font-size: 25px;
+  font-size: 22px;
   margin: 0px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .menu .menu__dish .dish__text .dish__desc span {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 300;
   overflow: hidden;
   white-space: nowrap;
@@ -431,6 +430,46 @@ a {
   transform: scale(1.02);
 }
 
+.delay0 {
+  animation: progressivemenu 2s linear backwards;
+}
+
+.delay1 {
+  animation: progressivemenu 2s linear 100ms backwards;
+}
+
+.delay2 {
+  animation: progressivemenu 2s linear 200ms backwards;
+}
+
+.delay3 {
+  animation: progressivemenu 2s linear 300ms backwards;
+}
+
+.delay4 {
+  animation: progressivemenu 2s linear 400ms backwards;
+}
+
+.delay5 {
+  animation: progressivemenu 2s linear 500ms backwards;
+}
+
+.delay6 {
+  animation: progressivemenu 2s linear 600ms backwards;
+}
+
+.delay7 {
+  animation: progressivemenu 2s linear 700ms backwards;
+}
+
+.delay8 {
+  animation: progressivemenu 2s linear 800ms backwards;
+}
+
+.delay9 {
+  animation: progressivemenu 2s linear 900ms backwards;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -489,10 +528,15 @@ footer ul a {
   }
   .working h2 {
     width: 100%;
+    padding-left: 13px;
   }
   .working .working__step {
     width: 25%;
     padding: 15px 25px;
+    font-size: 20px;
+  }
+  .working .working__step mark {
+    margin-left: -40px;
   }
   #restaurants {
     flex-flow: row wrap;
@@ -500,6 +544,7 @@ footer ul a {
   }
   #restaurants h2 {
     width: 100%;
+    padding-left: 22px;
   }
   #restaurants .restaurantcard {
     max-width: 500px;

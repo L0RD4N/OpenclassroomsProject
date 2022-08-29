@@ -7,11 +7,17 @@
 
         h2 {
             width: 100%;
+            padding-left: 13px;
         }
 
         .working__step {
             width: 25%;
             padding: 15px 25px;
+            font-size: 20px;
+
+            mark {
+                margin-left: -40px;
+            }
         }
     }
 
@@ -21,6 +27,7 @@
 
         h2 {
             width: 100%;
+            padding-left: 22px;
         }
 
         .restaurantcard {

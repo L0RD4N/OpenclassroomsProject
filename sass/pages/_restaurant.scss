@@ -86,7 +86,6 @@
         height: 90px;
         cursor: pointer;
         @include boxshadow--double;
-        animation: progressivemenu 2s linear;
 
         .dish__text {
             width: 100%;
@@ -104,7 +103,7 @@
                 text-overflow: ellipsis;
 
                 h4 {
-                    font-size: 25px;
+                    font-size: 22px;
                     margin: 0px;
                     overflow: hidden;
                     white-space: nowrap;
@@ -112,7 +111,7 @@
                 }
 
                 span {
-                    font-size: 19px;
+                    font-size: 17px;
                     font-weight: 300;
                     overflow: hidden;
                     white-space: nowrap;
@@ -186,4 +185,44 @@
             transform: scale(1.02);
         }
     }
+}
+
+.delay0 {
+    animation: progressivemenu 2s linear backwards;
+}
+
+.delay1 {
+    animation: progressivemenu 2s linear 100ms backwards;
+}
+
+.delay2 {
+    animation: progressivemenu 2s linear 200ms backwards;
+}
+
+.delay3 {
+    animation: progressivemenu 2s linear 300ms backwards;
+}
+
+.delay4 {
+    animation: progressivemenu 2s linear 400ms backwards;
+}
+
+.delay5 {
+    animation: progressivemenu 2s linear 500ms backwards;
+}
+
+.delay6 {
+    animation: progressivemenu 2s linear 600ms backwards;
+}
+
+.delay7 {
+    animation: progressivemenu 2s linear 700ms backwards;
+}
+
+.delay8 {
+    animation: progressivemenu 2s linear 800ms backwards;
+}
+
+.delay9 {
+    animation: progressivemenu 2s linear 900ms backwards;
 }
