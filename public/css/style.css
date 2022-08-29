@@ -131,6 +131,7 @@ a {
 .indexintro .indexintro__button:hover {
   transform: scale(1.02);
   box-shadow: 10px 10px 5px lightgrey;
+  filter: brightness(110%);
 }
 .indexintro .indexintro__button a {
   color: white;
@@ -243,10 +244,10 @@ a {
   margin-right: 10px;
 }
 #restaurants .restaurantscontainer .restaurantcard .restaurantcard__desc .restaurantcard__like .fa-regular {
-  font-size: 50px;
+  font-size: 30px;
 }
 #restaurants .restaurantscontainer .restaurantcard .restaurantcard__desc .restaurantcard__like .fa-solid {
-  font-size: 50px;
+  font-size: 30px;
   position: absolute;
   right: 0;
   top: 0;
@@ -424,6 +425,7 @@ a {
 .order .order__button:hover {
   box-shadow: 10px 10px 5px lightgrey;
   transform: scale(1.02);
+  filter: brightness(110%);
 }
 
 .delay0 {

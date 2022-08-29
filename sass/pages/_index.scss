@@ -43,6 +43,7 @@
         &:hover {
             transform: scale(1.02);
             @include boxshadow--light--hover;
+            filter: brightness(110%);
         }
 
         a {
@@ -172,11 +173,11 @@
                     margin-right: 10px;
 
                     .fa-regular {
-                        font-size: 50px;
+                        font-size: 30px;
                     }
 
                     .fa-solid {
-                        font-size: 50px;
+                        font-size: 30px;
                         position: absolute;
                         right: 0;
                         top: 0;

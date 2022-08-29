@@ -181,6 +181,7 @@
         &:hover {
             @include boxshadow--light--hover;
             transform: scale(1.02);
+            filter: brightness(110%);
         }
     }
 }
