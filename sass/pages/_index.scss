@@ -38,11 +38,11 @@
         border: none;
         transform: scale(1);
         transition: 400ms;
-        @include boxshadow--light;
+        @include boxshadow--button;
 
         &:hover {
             transform: scale(1.02);
-            @include boxshadow--light--hover;
+            @include boxshadow--button--hover;
             filter: brightness(110%);
         }
 

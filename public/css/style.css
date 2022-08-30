@@ -14,14 +14,13 @@
   }
 }
 @keyframes progressivemenu {
-  0% {
+  from {
     opacity: 0;
+    margin-top: 5px;
   }
-  50% {
-    opacity: 0;
-  }
-  100% {
+  to {
     opacity: 1;
+    margin-top: 0px;
   }
 }
 .pageloader {
@@ -34,7 +33,6 @@
   position: fixed;
   inset: 0;
   z-index: 99;
-  opacity: 0.9;
   animation: hidepageloader 1s forwards;
 }
 .pageloader .pageloader__spinner {
@@ -338,7 +336,7 @@ a {
   width: 95%;
   height: 90px;
   cursor: pointer;
-  box-shadow: 5px 5px 15px lightgrey, -5px -5px 15px lightgrey;
+  box-shadow: 5px 5px 15px lightgrey;
 }
 .menu .menu__dish .dish__text {
   width: 100%;
@@ -429,43 +427,43 @@ a {
 }
 
 .delay0 {
-  animation: progressivemenu 2s linear backwards;
+  animation: progressivemenu 1s linear backwards;
 }
 
 .delay1 {
-  animation: progressivemenu 2s linear 100ms backwards;
+  animation: progressivemenu 1s linear 100ms backwards;
 }
 
 .delay2 {
-  animation: progressivemenu 2s linear 200ms backwards;
+  animation: progressivemenu 1s linear 200ms backwards;
 }
 
 .delay3 {
-  animation: progressivemenu 2s linear 300ms backwards;
+  animation: progressivemenu 1s linear 300ms backwards;
 }
 
 .delay4 {
-  animation: progressivemenu 2s linear 400ms backwards;
+  animation: progressivemenu 1s linear 400ms backwards;
 }
 
 .delay5 {
-  animation: progressivemenu 2s linear 500ms backwards;
+  animation: progressivemenu 1s linear 500ms backwards;
 }
 
 .delay6 {
-  animation: progressivemenu 2s linear 600ms backwards;
+  animation: progressivemenu 1s linear 600ms backwards;
 }
 
 .delay7 {
-  animation: progressivemenu 2s linear 700ms backwards;
+  animation: progressivemenu 1s linear 700ms backwards;
 }
 
 .delay8 {
-  animation: progressivemenu 2s linear 800ms backwards;
+  animation: progressivemenu 1s linear 800ms backwards;
 }
 
 .delay9 {
-  animation: progressivemenu 2s linear 900ms backwards;
+  animation: progressivemenu 1s linear 900ms backwards;
 }
 
 header {

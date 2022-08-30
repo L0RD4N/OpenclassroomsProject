@@ -6,18 +6,10 @@
     box-shadow: 15px 15px 5px lightgrey;
 }
 
-@mixin boxshadow--light {
+@mixin boxshadow--button {
     box-shadow: 5px 5px 10px lightgrey;
 }
 
-@mixin boxshadow--light--hover {
+@mixin boxshadow--button--hover {
     box-shadow: 10px 10px 5px lightgrey;
-}
-
-@mixin boxshadow--double {
-    box-shadow: 5px 5px 15px lightgrey, -5px -5px 15px lightgrey;
-}
-
-@mixin boxshadow--double--hover {
-    box-shadow: 15px 15px 5px lightgrey, -15px -15px 5px lightgrey;
 }
