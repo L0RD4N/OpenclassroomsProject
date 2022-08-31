@@ -327,6 +327,36 @@ a {
   max-width: 45px;
   padding: 5px 0px;
 }
+.menu .delay0 {
+  animation: progressivemenu 1s linear 0ms backwards;
+}
+.menu .delay1 {
+  animation: progressivemenu 1s linear 100ms backwards;
+}
+.menu .delay2 {
+  animation: progressivemenu 1s linear 200ms backwards;
+}
+.menu .delay3 {
+  animation: progressivemenu 1s linear 300ms backwards;
+}
+.menu .delay4 {
+  animation: progressivemenu 1s linear 400ms backwards;
+}
+.menu .delay5 {
+  animation: progressivemenu 1s linear 500ms backwards;
+}
+.menu .delay6 {
+  animation: progressivemenu 1s linear 600ms backwards;
+}
+.menu .delay7 {
+  animation: progressivemenu 1s linear 700ms backwards;
+}
+.menu .delay8 {
+  animation: progressivemenu 1s linear 800ms backwards;
+}
+.menu .delay9 {
+  animation: progressivemenu 1s linear 900ms backwards;
+}
 .menu .menu__dish {
   display: flex;
   overflow: hidden;
@@ -424,46 +454,6 @@ a {
   box-shadow: 10px 10px 5px lightgrey;
   transform: scale(1.02);
   filter: brightness(110%);
-}
-
-.delay0 {
-  animation: progressivemenu 1s linear backwards;
-}
-
-.delay1 {
-  animation: progressivemenu 1s linear 100ms backwards;
-}
-
-.delay2 {
-  animation: progressivemenu 1s linear 200ms backwards;
-}
-
-.delay3 {
-  animation: progressivemenu 1s linear 300ms backwards;
-}
-
-.delay4 {
-  animation: progressivemenu 1s linear 400ms backwards;
-}
-
-.delay5 {
-  animation: progressivemenu 1s linear 500ms backwards;
-}
-
-.delay6 {
-  animation: progressivemenu 1s linear 600ms backwards;
-}
-
-.delay7 {
-  animation: progressivemenu 1s linear 700ms backwards;
-}
-
-.delay8 {
-  animation: progressivemenu 1s linear 800ms backwards;
-}
-
-.delay9 {
-  animation: progressivemenu 1s linear 900ms backwards;
 }
 
 header {

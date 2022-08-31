@@ -74,6 +74,12 @@
         }
     }
 
+    @for $i from 0 through 9 {
+        .delay#{$i} {
+            animation: progressivemenu 1s linear 100ms*$i backwards;
+        }
+    }
+
     .menu__dish {
         display: flex;
         overflow: hidden;
@@ -184,46 +190,4 @@
             filter: brightness(110%);
         }
     }
-}
-
-
-
-.delay0 {
-    animation: progressivemenu 1s linear backwards;
-}
-
-.delay1 {
-    animation: progressivemenu 1s linear 100ms backwards;
-}
-
-.delay2 {
-    animation: progressivemenu 1s linear 200ms backwards;
-}
-
-.delay3 {
-    animation: progressivemenu 1s linear 300ms backwards;
-}
-
-.delay4 {
-    animation: progressivemenu 1s linear 400ms backwards;
-}
-
-.delay5 {
-    animation: progressivemenu 1s linear 500ms backwards;
-}
-
-.delay6 {
-    animation: progressivemenu 1s linear 600ms backwards;
-}
-
-.delay7 {
-    animation: progressivemenu 1s linear 700ms backwards;
-}
-
-.delay8 {
-    animation: progressivemenu 1s linear 800ms backwards;
-}
-
-.delay9 {
-    animation: progressivemenu 1s linear 900ms backwards;
 }
