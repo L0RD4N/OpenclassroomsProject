@@ -66,6 +66,8 @@
 
     .working__step {
         background-color: $lightgrey;
+        display: flex;
+        align-items: center;
         margin-bottom: 40px;
         font-size: 23px;
         padding: 30px 40px;
